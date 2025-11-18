@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="blog-container">
+    <h1>Welcome to My Blog</h1>
+    <h2>CSS Box Model & Typography</h2>
+    <p>
+      This blog shows how to use margins, padding, borders, fonts, and spacing 
+      to create clean and readable content.
+    </p>
+    <button>Read More</button>
+  </div>
+
+</body>
+</html>
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fafafa;
+  padding: 40px;
+}
+
+.blog-container {
+  width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+
+
+
+
