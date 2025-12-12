@@ -1,0 +1,50 @@
+.loader {
+  width: 40px;
+  height: 40px;
+  border: 6px solid #ccc;
+  border-top-color: #0077ff;
+  border-radius: 50%;
+
+  animation: spin 1s linear infinite;
+}
+
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.btn {
+  background: #ff6600;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: none;
+
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background: #cc5200;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .loader {
+    margin: 50px auto;
+    width: 30px;
+    height: 30px;
+  }
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .products {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+}
