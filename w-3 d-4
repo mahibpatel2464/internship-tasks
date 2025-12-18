@@ -1,0 +1,19 @@
+let students = [
+  { name: "Aarav", score: 78 },
+  { name: "Diya", score: 92 },
+  { name: "Kunal", score: 85 }
+];
+
+function highestScorer(students) {
+  let topStudent = students[0];
+
+  for (let i = 1; i < students.length; i++) {
+    if (students[i].score > topStudent.score) {
+      topStudent = students[i];
+    }
+  }
+
+  return topStudent;
+}
+
+console.log(highestScorer(students));
