@@ -1,0 +1,14 @@
+const student = {
+  name: "Mahi",
+  score: 95
+};
+
+const { name, score } = student;
+console.log(name, score);
+
+
+const arr1 = [10, 20];
+const arr2 = [30, 40];
+
+const result = [...arr1, ...arr2];
+console.log(result);
